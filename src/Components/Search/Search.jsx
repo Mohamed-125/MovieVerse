@@ -96,7 +96,9 @@ const Search = ({
 
       <select
         ref={selectRef}
-        onClick={window.location.href.includes("search") ? selectHandler : null}
+        onChange={
+          window.location.href.includes("search") ? selectHandler : null
+        }
       >
         <option> movies </option>
         <option> tv shows </option>
