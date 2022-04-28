@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MoiveVerse/static/css/main.5e501271.css",
+    "main.js": "/MoiveVerse/static/js/main.9edab69b.js",
+    "index.html": "/MoiveVerse/index.html",
+    "main.5e501271.css.map": "/MoiveVerse/static/css/main.5e501271.css.map",
+    "main.9edab69b.js.map": "/MoiveVerse/static/js/main.9edab69b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e501271.css",
+    "static/js/main.9edab69b.js"
+  ]
+}
