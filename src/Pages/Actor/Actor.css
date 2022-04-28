@@ -1,0 +1,42 @@
+.actorDetails {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  min-height: 100vh;
+}
+
+.actorDetails__actorImg {
+  width: 50%;
+  object-fit: contain;
+  max-height: 600px;
+  border-radius: 10px;
+}
+.actorDatails__text {
+  position: relative;
+}
+.actorDatails__text p {
+  line-height: 1.5rem;
+}
+.movieDatails__text h2 {
+  font-size: 30px;
+}
+.actor__biography_div {
+  overflow: hidden;
+  position: relative;
+}
+
+/* media query start  */
+@media (max-width: 768px) {
+  .actorDetails__actorImg {
+    width: 100%;
+    object-fit: contain;
+  }
+  .actorDetails {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

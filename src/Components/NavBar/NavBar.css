@@ -1,0 +1,48 @@
+.nav__nav {
+  margin-bottom: 2rem;
+  background-color: var(--main-color);
+  z-index: 20;
+  position: sticky;
+  top: 0px;
+}
+.nav__contener {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.nav__mobile_icon {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  gap: 6px;
+}
+
+.nav__mobile_icon span {
+  transition: 0.3s all;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+}
+.nav__mobile_icon_close span:last-child {
+  background-color: red;
+  transform: rotate(-45deg);
+}
+
+.nav__mobile_icon_close span:nth-child(2) {
+  display: none;
+}
+.nav__mobile_icon_close span:first-child {
+  transform: rotate(45deg);
+
+  background-color: red;
+  top: 11px;
+}
+.nav__links_div a {
+  margin-inline: 0.7rem;
+}

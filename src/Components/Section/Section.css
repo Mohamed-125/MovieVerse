@@ -1,0 +1,41 @@
+.section__contener {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+
+  margin-inline: auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.section__contener h2 {
+  font-size: clamp(15px, 10vw, 20px);
+}
+
+.section__content_parent_wraper {
+  overflow: auto;
+  height: 470px;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+}
+.section__content_contener {
+  display: flex;
+  gap: 30px;
+}
+.section__movieDiv {
+  font-weight: bold;
+  transition: 0.3s all;
+}
+.section__movieDiv:hover {
+  transform: scale(1.13);
+}
+
+.section__movieDiv img {
+  width: 20vw;
+  max-width: 200px;
+  min-width: 150px;
+  border-radius: 30px;
+}

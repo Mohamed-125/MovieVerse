@@ -1,0 +1,19 @@
+.MovieGrid__grid_parent {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  align-content: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.movieGrid__movie_div img {
+  max-width: 200px;
+  border-radius: 30px;
+}
+.movieGrid__movie_div:hover {
+  transform: scale(1.1);
+}
+.movieGrid__movie_div {
+  transition: 0.3s all;
+}
