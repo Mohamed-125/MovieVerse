@@ -279,7 +279,7 @@ function App() {
               }
             />
             <Route path="/actor/:actorId" element={<Actor />} />
-            <Route path="/" element={<Home />} />
+            <Route path="/MovieVerse/" element={<Home />} />
           </Routes>
 
           {/* routes end */}
