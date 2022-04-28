@@ -1,5 +1,10 @@
 import React, { useEffect, useState, createContext } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  HashRouter,
+} from "react-router-dom";
 import NavBar from "./Components/NavBar/NavBar";
 import Home from "./Home";
 import Actor from "./Pages/Actor/Actor";
@@ -148,7 +153,7 @@ function App() {
           setAiringToday_tv,
         ]}
       >
-        <Router>
+        <HashRouter>
           <NavBar />
           <Input
             mediaType={mediaType}
@@ -283,7 +288,7 @@ function App() {
           </Routes>
 
           {/* routes end */}
-        </Router>
+        </HashRouter>
       </context.Provider>
     </similarContext.Provider>
   );
