@@ -41,7 +41,7 @@ const NavBar = () => {
             <div className="nav__links_div">
               <Link to={"/"}>Home</Link>
               <Link to={"/movie/Popular/more"}>Popular Movies</Link>
-              <Link to={"/"}>Popular Tv Shows</Link>
+              <Link to={"/tv/Popular_Tv_Shows/more"}>Popular Tv Shows</Link>
             </div>
           </>
         ) : (

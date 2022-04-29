@@ -24,7 +24,7 @@ const NavBarMobile = ({ isMobileNavOpen, setIsMobileNavOpen }) => {
           <Link onClick={clickHandler} to={"/movie/Popular/more"}>
             Popular Movies
           </Link>
-          <Link onClick={clickHandler} to={"/"}>
+          <Link onClick={clickHandler} to={"/tv/Popular/more"}>
             Popular Tv Shows
           </Link>
         </div>
