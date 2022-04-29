@@ -15,7 +15,6 @@ const Actor = () => {
       .then((res) => res.json())
       .then((data) => {
         setActorData(data);
-        console.log(data);
       });
 
     fetch(ACTOR_MOVIES_URL)
@@ -23,13 +22,11 @@ const Actor = () => {
       .then((data) => {
         setActorMoviesData(data.cast);
       });
-    console.log(actorId);
     fetch(ACTOR_TV_URL)
       .then((res) => res.json())
       .then((data) => {
         setActorTVData(data.cast);
       });
-    console.log(actorId);
   }, [actorId]);
   return (
     <>

@@ -48,7 +48,13 @@ const Section = ({ title, type, setMore, LinkName, mediaType }) => {
                 to={`/${mediaType}/${item.id}`}
               >
                 <div className="section__movieDiv">
-                  <img src={img} />
+                  <img
+                    src={
+                      item.poster_path
+                        ? img
+                        : "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2T5824oNgrzQEYWeOimkakYqM4KawtUGpX4mhwhbWcmj8vwz6"
+                    }
+                  />
                   <p>{item.name || item.title}</p>
                 </div>
               </Link>

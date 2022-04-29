@@ -61,7 +61,7 @@ function App() {
   const [searchResults, setSearchResults] = useState("");
   // set the media type which the user is searching for bec in this api movies and shows may have the same id
   // so this is a good practice to avoid bugs when the use click on movie or show
-  const [mediaType, setMediaType] = useState("moive");
+  const [mediaType, setMediaType] = useState("");
 
   // apis which we are going to use
 
@@ -76,9 +76,6 @@ function App() {
   // the function which will fire on mount and when the user clicks load more
 
   const FetchFunction = (fetchUrl, setState, state) => {
-    if (fetchUrl) {
-      console.log(fetchUrl);
-    }
     fetch(fetchUrl)
       .then((res) => res.json())
       .then((data) => {

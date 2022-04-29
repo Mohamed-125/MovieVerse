@@ -14,20 +14,24 @@ const Search = ({
   // there is a problem with useNaivgte which renders the page twice
   // so you have to click back twice and i dont know why
   const navigate = useNavigate();
-  const [searchWord, setSearchWord] = useState("");
+  const [searchWord, setSearchWord] = useState([]);
   const ref = useRef();
   const selectRef = useRef();
   // save what the use typed in the input to search for it
   const submitHandler = (e) => {
+    console.log("fsdf");
     e.preventDefault();
-    setSearchWord(ref.current.value);
-    console.log(selectRef.current.value);
-    if (selectRef.current.value === "movies") {
+    setSearchWord([ref.current.value]);
+    if (selectRef?.current?.value === "movies") {
       setMediaType("movie");
-    } else {
+    } else if (selectRef?.current?.value === "tv shows") {
       setMediaType("tv");
     }
   };
+
+  useEffect(() => {
+    console.log(mediaType);
+  }, [mediaType]);
 
   const selectHandler = (e) => {
     if (e.target.value === "movies") {
@@ -49,8 +53,11 @@ const Search = ({
   useEffect(() => {
     if (window.location.href.includes("tv")) {
       setMediaType("tv");
-    } else {
+    } else if (window.location.href.includes("movie")) {
       setMediaType("movie");
+    }
+    if (window.location.href === "http://localhost:3000/#/") {
+      ref.current.value = null;
     }
   }, [window.location.href]);
   // go to the search page

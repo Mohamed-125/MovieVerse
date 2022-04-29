@@ -1,7 +1,6 @@
 import React from "react";
 
 const MovieInfo = ({ movieData, mediaType }) => {
-  console.log(movieData.spoken_languages);
   return (
     <div style={{ marginLeft: "2rem" }}>
       <h4> {mediaType === "tv" ? "series" : "movie"} Information</h4>
