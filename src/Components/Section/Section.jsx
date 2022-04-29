@@ -24,7 +24,7 @@ const Section = ({ title, type, setMore, LinkName, mediaType }) => {
           justifyContent: "space-between",
           alignItems: "center",
           flexWrap: "wrap",
-          paddingLeft: "2rem",
+          paddingLeft: "0.5rem",
         }}
       >
         <h2> {title}</h2>
