@@ -32,7 +32,9 @@ const NavBar = () => {
     <nav className="nav__nav section__padding">
       <div className="nav__contener">
         <div className="nav__logo_div">
-          <h2>MovieVerse</h2>
+          <Link to="/">
+            <h2>MovieVerse</h2>
+          </Link>
         </div>
         {window.innerWidth > 700 ? (
           <>
